@@ -1,0 +1,35 @@
+{
+  "name": "gamesense-lua",
+  "displayName": "Chris's Gamesense Lua",
+  "description": "Intelligently highlight your skeet lua code",
+  "version": "1.0.0",
+  "publisher": "csmit195",
+  "engines": {
+    "vscode": "^1.20.0"
+  },
+  "contributes": {
+    "languages": [
+			{
+				"id": "lua",
+				"aliases": [
+					"Gamesense Lua",
+					"GS Lua"
+				],
+				"extensions": [
+					".lua"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+    "grammars": [
+      {
+        "language": "lua",
+        "scopeName": "source.lua",
+        "path": "./markdown.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.javascript": "javascript"
+        }
+      }
+    ]
+  }
+}
